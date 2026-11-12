@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-projekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "sass src/scss/style.scss dist/css/style.css --style=compressed",
+    "scss:watch": "sass --watch src/scss/style.scss:dist/css/style.css --style=compressed",
+    "serve": "browser-sync start --server --files \"*.html,dist/css/*.css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "6.0.0-alpha.1",
+    "bootstrap-icons": "^1.13.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "sass": "^1.108.2"
+  }
+}

@@ -1,0 +1,24 @@
+
+// Bootstrap-Grundstile und die benötigten Komponenten
+@use "../../node_modules/bootstrap/scss/root";
+@use "../../node_modules/bootstrap/scss/content/reboot";
+@use "../../node_modules/bootstrap/scss/layout/containers";
+@use "../../node_modules/bootstrap/scss/layout/grid";
+@use "../../node_modules/bootstrap/scss/buttons/button";
+@use "../../node_modules/bootstrap/scss/helpers/theme-colors";
+
+@use "../../node_modules/bootstrap-icons/font/bootstrap-icons" with (
+    $bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts"
+);
+
+$primary: #ff9b51;
+
+:root {
+    --primary-base: #{$primary};
+    --primary-bg: var(--primary-base);
+    --primary-contrast: var(--gray-900);
+}
+
+body {
+    background-color: #f8f9fa;
+}
