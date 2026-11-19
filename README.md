@@ -1,6 +1,6 @@
 # Übung 05 – Webdev Toolchain
 
-Die Testseite zeigt ein responsives Bootstrap-Raster, drei Buttons und zwei Bootstrap-Icons. Sass lädt die benötigten Bootstrap-Module mit `@use`. Das Projekt verwendet dafür Bootstrap 6.0.0-alpha.1.
+Die Testseite zeigt ein responsives Bootstrap-Raster, mehrere Button-Varianten und Bootstrap-Icons. Sass lädt die benötigten Bootstrap-Module mit `@use`. Das Projekt verwendet dafür Bootstrap 6.0.0-alpha.1.
 
 ## Voraussetzungen
 

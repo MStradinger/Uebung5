@@ -1,49 +1,46 @@
-
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap und Sass</title>
-
+    <title>Übung 05 – Bootstrap mit Sass</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
+    <main class="container">
+        <header>
+            <p class="exercise">MEDT · Übung 05</p>
+            <h1>Bootstrap mit Sass</h1>
+            <p>Die beiden Kästen stehen am Desktop nebeneinander und am Handy untereinander.</p>
 
-    <div class="container">
-        <h1>Bootstrap mit Sass</h1>
-        <p>Mein erstes Bootstrap-Projekt</p>
-
-        <h2>Grid-System</h2>
+            <nav class="page-links" aria-label="Links zur Übung">
+                <a class="btn-solid theme-primary" href="#sass">
+                    <i class="bi bi-braces" aria-hidden="true"></i> Sass-Build
+                </a>
+                <a class="btn-outline theme-secondary" href="#browser-sync">
+                    <i class="bi bi-arrow-repeat" aria-hidden="true"></i> Live-Reload
+                </a>
+            </nav>
+        </header>
 
         <div class="row">
             <div class="md:col-6">
-                <h3>Spalte 1</h3>
-                <p>Das ist die erste Spalte.</p>
+                <section id="sass" class="example">
+                    <h2>Sass-Build</h2>
+                    <p><code>npm run scss:build</code> erstellt das Stylesheet.</p>
+                    <p>Die Farbe des ersten Buttons steht in <code>src/scss/style.scss</code>.</p>
+                </section>
             </div>
-
             <div class="md:col-6">
-                <h3>Spalte 2</h3>
-                <p>Das ist die zweite Spalte.</p>
+                <section id="browser-sync" class="example">
+                    <h2>Live-Reload</h2>
+                    <p>Starte <code>npm run scss:watch</code> und <code>npm run serve</code> in zwei Terminals.</p>
+                    <p>Beim Speichern siehst du die Änderung direkt im Browser.</p>
+                </section>
             </div>
         </div>
 
-        <h2>Bootstrap Buttons</h2>
-
-        <button class="btn-solid theme-primary">
-            <i class="bi bi-rocket-takeoff" aria-hidden="true"></i>
-            Primary
-        </button>
-
-        <button class="btn-outline theme-secondary">
-            Secondary
-        </button>
-
-        <button class="btn-solid theme-success">
-            <i class="bi bi-check-circle" aria-hidden="true"></i>
-            Success
-        </button>
-    </div>
-
+        <p class="documentation"><a href="README.md" download>Anleitung herunterladen</a></p>
+    </main>
 </body>
 </html>
